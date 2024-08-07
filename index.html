@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>Product Satisfaction Survey</title>
+   <link rel="stylesheet" href="styles.css"/>
+ </head>
+ <body>
+   <h1 id="title">Product Satisfaction Survey</h1>
+   <p id="description" class="description">Please fill out the survey to help us improve our products.</p>
+   <div class="form">
+     <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+     <fieldset>
+       <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></input></label> <!NAME-->
+       <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required></input></label> <!EMAIL-->
+       <legend>Personal Information</legend>
+     </fieldset>
+     <fieldset>
+       <label for="product-name" id="product-label">Product Name <input type="text" id="product-name" placeholder="Enter product name" required></input></label> <!PRODUCTNAME-->
+       <label for="number" id="number-label">Quantity <input type="number" id="number" min="1" max="99" required class="number" placeholder="1-99"></input></label> <!QUANTITY-->
+       <label for="dropdown">Retailer
+         <select id="dropdown" name="product-location" class ="number" required>
+           <option value="null">(select one)</option>
+           <option value="wal">Walmart</option>
+           <option value="tar">Target</option>
+           <option value="shr">ShopRite</option>
+           <option value="cos">Costco</option>
+           <option value="oth">Other</option>
+         </select>
+       </label><!RETAILER-->
+       <p class="label">Mode of Delivery</p>
+       <label for="in-person" ><input id="in-person" name="mode-of-delivery" type="radio" class="inline" value="in-person" checked></input>In-Person</label>
+       </label>
+       <label for="online" ><input id="online" name="mode-of-delivery" type="radio" class="inline" value="in-person"></input>Online</label><!MODE-OF-DELIVERY-->
+       <p class="label" >Referrer</p>
+       <label for="social-media"><input type="checkbox" id="social-media" value="socmed" class="inline">Social Media</input></label>
+       <label for="friends-family"><input type="checkbox" id="friends-family" value="frifam" class="inline">Friends/Family</input></label>
+       <label for="online-ad"><input type="checkbox" id="online-ad" value="onl-ad" class="inline">Online Ad</input></label>
+       <label for="billboard-ad"><input type="checkbox" id="billboard-ad" value="bil-ad" class="inline">Billboard Ad</input></label>
+       <label for="other"><input type="checkbox" id="other" value="oth" class="inline">Other</input></label><!REFERRER-->
+       <legend> Product Information</legend>
+     </fieldset>
+     <fieldset>
+       <legend>Product Satisfaction</legend>
+       <label for="rating">Rating from 1-5
+         <select id="rating" name="rating" class="number" required>
+           <option value="null">(select one)</option>
+           <option value="1">1 (least satisfaction)</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5 (most satisfaction)</option>
+         </select>
+       </label><!RATING-->
+       <label for="feedback">Any feedback?
+         <textarea id="feedback" cols="30" rows="5" placeholder="the product was very epic"></textarea>
+       </label><!FEEDBACK-->
+     </fieldset>
+     <input type="submit" class="submit" value="Submit" id="submit"></input>
+   </form>
+   </div>
+ </body>
+</html>
